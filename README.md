@@ -46,3 +46,29 @@ http://blog.example.com/{year}/posts
 - When an online shopper uses their browser to buy a product and requests its details, the application would provide the product details as a Web page in HTML. Now, when a developer writing a native mobile application requests product details, the ecommerce application might return those details in XML or JSON format. In both scenarios, the clients didn’t interact with the actual resource—the database record-holding product details. Instead, they dealt with its representation.
 - ![Screen Shot 2024-06-07 at 9 37 53 AM](https://github.com/gmojados/SpringRestNotes/assets/162353468/5cc86014-ab75-4859-8011-1b678a4315b8)
 
+##### Safety
+- Safe methods are used to retrieve resources. However, safety doesn’t mean that the method must return the same value every time. For example, a GET request to retrieve Google stock might result in a different value for each call. But as long as it didn’t alter any state, it is still considered safe.
+
+##### Idempotency
+- An operation is considered to be idempotent if it produces the same server state whether we apply it once or any number of times
+-  HTTP methods such as GET, HEAD (which are also safe), PUT, and DELETE are considered to be idempotent, guaranteeing that clients can repeat a request and expect the same effect as making the request once
+
+##### Get
+- The GET method is used to retrieve a resource’s representation.
+- -GET requests don’t modify server state, they are considered to be safe and idempotent.
+- A hypothetical GET request to http://blog.example.com/posts/1 and the corresponding response are shown here:
+_GET /posts/1 HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Host: blog.example.com_
+
+- The simplicity of the GET method is often abused and it is used to perform operations such as deleting or updating a resource’s representation. Such usage violates standard HTTP semantics and is highly discouraged.
+
+##### HEAD
+- The HEAD method allows a client to only retrieve the metadata associated with a resource. No resource representation gets sent to the client.
+- Like GET, the HEAD method is also safe and idempotent and responses can be cached on the client.
+
+##### Delete
+- 
+  
