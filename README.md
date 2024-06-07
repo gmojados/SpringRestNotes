@@ -25,7 +25,11 @@
 - The scheme and the scheme-specific-part are separated using a semicolon.
 - Examples of a scheme include http or ftp or mailto and are used to define the semantics and interpretation of the rest of the URI.
 - Take the example of the URI—http://www.apress.com/9781484208427. The http portion of the example is the scheme;
-![Screen Shot 2024-05-29 at 6 58 37 AM](https://github.com/gmojados/SpringRestNotes/assets/162353468/97de9507-f9e5-4e7b-ae10-55b523321005)
+
+![Screen Shot 2024-06-07 at 9 13 38 AM](https://github.com/gmojados/SpringRestNotes/assets/162353468/e099c5b3-b86d-4d9c-b187-3a9a527fde01)
+
+
+
 - it is possible for a resource to have more than one URI. For example, Facebook can be accessed using URIs https://www.facebook.com and https://www.fb.com.
 -The term URI aliases is used to refer to such URIs that identify the same resources. URI aliases provide flexibility and added convenience such as having to type fewer characters to get to the resource.
 
@@ -39,8 +43,6 @@ http://blog.example.com/{year}/posts
 - Data and metadata that make a RESTful resouce needs to be serialized into a representation before it gets sent to a client.
 - Can be viewed as a snapshot of a resource's state at a given point in time.
 - **EXAMPLE**
-- When an online shopper uses their browser to buy a product and requests its details, the application would provide the product details as a Web page in HTML. Now, when a developer writing a native mobile application requests product details, the ecommerce application might return those details in XML or JSON format. In both scenarios, the clients didn’t
-![Screen Shot 2024-06-05 at 10 28 49 AM](https://github.com/gmojados/SpringRestNotes/assets/162353468/b755ec38-55c4-415a-8eef-d185607c628e)
+- When an online shopper uses their browser to buy a product and requests its details, the application would provide the product details as a Web page in HTML. Now, when a developer writing a native mobile application requests product details, the ecommerce application might return those details in XML or JSON format. In both scenarios, the clients didn’t interact with the actual resource—the database record-holding product details. Instead, they dealt with its representation.
+- ![Screen Shot 2024-06-07 at 9 37 53 AM](https://github.com/gmojados/SpringRestNotes/assets/162353468/5cc86014-ab75-4859-8011-1b678a4315b8)
 
-
-interact with the actual resource—the database record-holding product details. Instead, they dealt with its representation.
