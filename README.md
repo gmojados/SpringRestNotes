@@ -102,6 +102,24 @@ Host: blog.example.com_
 - Server Error Codes—Status codes indicating that there was an error on the server while processing the client’s request. These codes are in the 500 series.
 ![Screen Shot 2024-06-07 at 11 40 15 AM](https://github.com/gmojados/SpringRestNotes/assets/162353468/f32847ba-57cb-4ac1-8c85-0c4a136f0603)
 
+##### Steps to building RESTFUL API:
+1.) Identify Resources—Central to REST are resources. We start modeling different resources that are of interest to our consumers. Often, these resources can be the application’s domain or entities. However, a one-to-one mapping is not always required.
+2.) Identify Endpoints—The next step is to design URIs that map resources to endpoints. In Chapter 4, we will look at best practices for designing and naming endpoints.
+3.) Identify Actions—Identify the HTTP methods that can be used to perform operations on the resources.
+4.) Identify Responses—Identify the supported resource representation for the request and response along with the right status codes to be returned.
 
+### Chaper 2: SPRING WEB MVC PRIMER
+##### Dependency Injection
+- Constructor Injection
 
+- Dependencies are provided through a class constructor.
+Setter Injection
 
+- Dependencies are provided through setter methods.
+Field Injection
+
+- Dependencies are provided directly to fields (less recommended due to testing difficulties).
+
+_Configuring Dependency Injection in Spring_
+XML Configuration
+Define beans and their dependencies in an XML file.
