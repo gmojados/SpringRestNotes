@@ -95,11 +95,11 @@ Host: blog.example.com_
 ![Screen Shot 2024-06-07 at 9 13 38 AM](https://github.com/gmojados/SpringRestNotes/assets/162353468/952068d6-890a-4411-b2d6-e13e85b64804)
 
 ###### HTTP Status Code Groups/ Categories:
-• Informational Codes—Status codes indicating that the server has received the request but hasn’t completed processing it. These intermediate response codes are in the 100 series.
-• Success Codes—Status codes indicating that the request has been successfully received and processed. These codes are in the 200 series.
-• Redirection Codes—Status codes indicating that the request has been processed, but the client must perform an additional action to complete the request. These actions typically involve redirecting to a different location to get the resource. These codes are in the 300 series.
-• Client Error Codes—Status codes indicating that there was an error or a problem with client’s request. These codes are in the 400 series.
-• Server Error Codes—Status codes indicating that there was an error on the server while processing the client’s request. These codes are in the 500 series.
+- Informational Codes—Status codes indicating that the server has received the request but hasn’t completed processing it. These intermediate response codes are in the 100 series.-
+-  Success Codes—Status codes indicating that the request has been successfully received and processed. These codes are in the 200 series.
+- direction Codes—Status codes indicating that the request has been processed, but the client must perform an additional action to complete the request. These actions typically involve redirecting to a different location to get the resource. These codes are in the 300 series.
+- Client Error Codes—Status codes indicating that there was an error or a problem with client’s request. These codes are in the 400 series.
+- Server Error Codes—Status codes indicating that there was an error on the server while processing the client’s request. These codes are in the 500 series.
 ![Screen Shot 2024-06-07 at 11 40 15 AM](https://github.com/gmojados/SpringRestNotes/assets/162353468/f32847ba-57cb-4ac1-8c85-0c4a136f0603)
 
 
