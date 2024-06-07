@@ -123,3 +123,13 @@ Field Injection
 _Configuring Dependency Injection in Spring_
 XML Configuration
 Define beans and their dependencies in an XML file.
+
+
+##### Model View Controller Pattern
+- Model:The model represents data or state. In a Web-based banking application, information representing accounts, transactions, and statements are examples of the model.
+- View: Provides a visual representation of the model. This is what the user interacts with by providing inputs and viewing the output. In our banking application, Web pages showing accounts and transactions are examples of views.
+- Controller—The controller is responsible for handling user actions such as button clicks. It then interacts with services or repositories to prepare the model and hands the prepared model over to an appropriate view.
+![Screen Shot 2024-06-07 at 12 00 13 PM](https://github.com/gmojados/SpringRestNotes/assets/162353468/f3c8a4c7-d507-40b0-aba1-b0b2a26f585a)
+
+###### Spring Web MVC Components
+
