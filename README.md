@@ -70,5 +70,38 @@ Host: blog.example.com_
 - Like GET, the HEAD method is also safe and idempotent and responses can be cached on the client.
 
 ##### Delete
-- 
-  
+- The DELETE method, as the name suggests, requests a resource to be deleted.
+- On receiving the request, a server deletes the resource. For resources that might take a long time to delete, the server typically sends a confirmation that it has received the request and will work on it.
+- Depending on the service implementation, the resource may or may not be physically deleted.
+
+
+##### Put
+- The PUT method allows a client to modify a resource state.
+- A client modifies the state of a resource and sends the updated representation to the server using a PUT method. On receiving the request, the server replaces the resource’s state with the new state.
+- Clients can also use PUT method to create a new resource. However, it will only be possible when the client knows the URI of the new resource.
+
+##### POST
+- The POST method is used to create resources.
+-  Typically, it is used to create resources under subcollections— resource collections that exist under a parent resource.
+-  For example, the POST method can be used to create a new blog entry in a blogging application
+-  Unlike PUT, a POST request doesn’t need to know the URI of the resource. The server is responsible for assigning an ID to the resource and deciding the URI where the resource is going to reside.
+- The POST method is very flexible and is often used when no other HTTP method seems appropriate.
+
+##### Patch
+- The PATCH method proposed as part of RFC 5789 (http://tools.ietf.org/html/ rfc5789) is used to perform partial resource updates.
+-  It is neither safe nor idempotent.
+
+##### CRUD AND HTTP VERBS
+![Screen Shot 2024-06-07 at 9 13 38 AM](https://github.com/gmojados/SpringRestNotes/assets/162353468/952068d6-890a-4411-b2d6-e13e85b64804)
+
+###### HTTP Status Code Groups/ Categories:
+• Informational Codes—Status codes indicating that the server has received the request but hasn’t completed processing it. These intermediate response codes are in the 100 series.
+• Success Codes—Status codes indicating that the request has been successfully received and processed. These codes are in the 200 series.
+• Redirection Codes—Status codes indicating that the request has been processed, but the client must perform an additional action to complete the request. These actions typically involve redirecting to a different location to get the resource. These codes are in the 300 series.
+• Client Error Codes—Status codes indicating that there was an error or a problem with client’s request. These codes are in the 400 series.
+• Server Error Codes—Status codes indicating that there was an error on the server while processing the client’s request. These codes are in the 500 series.
+![Screen Shot 2024-06-07 at 11 40 15 AM](https://github.com/gmojados/SpringRestNotes/assets/162353468/f32847ba-57cb-4ac1-8c85-0c4a136f0603)
+
+
+
+
